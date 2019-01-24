@@ -48,7 +48,7 @@ class Trurl
         return $string;
     }
 
-    public static function url($string, $change_case = true)
+    public static function url($string, $change_case = true, $locale = 'ru')
     {
         $string = Trurl::translit($string);
         if (isset(Trurl::$url_rep[$locale])) {
