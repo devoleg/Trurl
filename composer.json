@@ -1,7 +1,7 @@
 {
   "name": "devoleg/trurl",
   "description": "Package for transliterate and make url format",
-  "version": "1.0",
+  "version": "1.1",
   "license": "MIT",
   "authors": [
     {
