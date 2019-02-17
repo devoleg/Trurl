@@ -57,6 +57,8 @@ class Trurl
         if ($change_case) $string = mb_convert_case($string, MB_CASE_LOWER);
         $string = preg_replace('#[^0-9a-zA-Z\-]#', '-', $string);
         $string = preg_replace('#-{2,}#', '-', $string);
+        if (substr($string, 0, 1) == '-') $string = substr($string, 1);
+        if (substr($string, -1) == '-') $string = substr($string, 0, -1);
         return $string;
     }
 }
